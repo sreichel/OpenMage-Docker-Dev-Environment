@@ -1,5 +1,7 @@
 # OpenMage DDE-Starter-Project
 
+Setup based on https://github.com/sandstein/docker-dev-environment
+
 ...
 
 ##  Installation
