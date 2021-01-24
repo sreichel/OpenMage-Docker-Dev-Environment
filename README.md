@@ -1,8 +1,8 @@
-#OpenMage DDE-Starter-Project
+# OpenMage DDE-Starter-Project
 
 ...
 
-##Installation
+##  Installation
 
 It is recommended to install DDE and all your projects to `~/workspace`
 
@@ -15,7 +15,7 @@ It is recommended to install DDE and all your projects to `~/workspace`
 - `cd ~/workspace/docker/dev-environment`
 - `ln -s ../.. vhosts`
 
-###Install Sample
+### Install Sample
 
 - `cd ~/workspace`
 - `git git@github.com:OpenMageDev/dde-starter-project.git tests/sample`
