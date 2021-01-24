@@ -1,0 +1,28 @@
+{
+  "name": "sample/openmage",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.firegento.com"
+    }
+  ],
+  "config": {
+    "secure-http": false,
+    "bin-dir": "tools"
+  },
+  "require": {
+    "php": ">=7.4.0",
+    "aydin-hassan/magento-core-composer-installer": "*",
+    "magento-hackathon/magento-composer-installer": "@dev",
+    "openmage/magento-lts":"1.9.4.x"
+  },
+  "extra": {
+    "magento-deploystrategy": "copy",
+    "magento-deploystrategy-dev": "symlink",
+    "magento-root-dir": "htdocs",
+    "magento-force": true,
+    "magento-core-package-type": "magento-source"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
