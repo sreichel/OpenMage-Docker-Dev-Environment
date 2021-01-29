@@ -1,5 +1,5 @@
 # OpenMage DDE-Starter-Project
-A flexible docker based sample setup for OpenMage LTS based on [sandstein/docker-dev-environment](https://github.com/sandstein/docker-dev-environment).
+A flexible docker based sample setup for [__OpenMage LTS__](https://github.com/OpenMage/magento-lts) based on [sandstein/docker-dev-environment](https://github.com/sandstein/docker-dev-environment).
 
 ## Installation
 
