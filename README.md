@@ -1,50 +1,63 @@
 #OpenMage DDE-Starter-Project
-
-...
+A flexible docker based sample setup for OpenMage LTS based on [sandstein/docker-dev-environment](https://github.com/sandstein/docker-dev-environment).
 
 ##Installation
 
-It is recommended to install DDE and all your projects to `~/workspace`
+To easily follow sample files, it is recommended to install _docker-dev-environment_ and all your projects to `~/workspace`.
 
 - `mkdir ~/workplace`
 
-### Install DDE
-
+### Install requirements
+- docker
+- docker-compose
+  
+### Install _docker-dev-environment_
+Follow [Initialisation and commands](https://github.com/sandstein/docker-dev-environment#initialisation-and-commands).
 - `cd ~/workspace`
 - `git clone git@github.com:sandstein/docker-dev-environment.git docker/dev-environment`
 - `cd ~/workspace/docker/dev-environment`
 - `ln -s ../.. vhosts`
 
-###Install Sample
-
+###Install _OpenMage LTS_
 - `cd ~/workspace`
-- `git git@github.com:OpenMageDev/dde-starter-project.git tests/sample`
-- `cd ~/workspace/tests/sample`
+- `git clone https://github.com/sreichel/om-dde-starter-project.git magento1/openmage`
+- `cd ~/workspace/magento1/openmage`
 
-#### Customize setup
-
-Setup containers (php-version, db-version, additionals like redis or mailhog)
+#### Project configuration
+Copy and adjust environment setting ...
 - `cp docker/.env.sample .env`
 
-Setup virtual host
-- `cp docker/config/sample.conf ~/workspace/docker/dev-environment/config/apache24/conf.d/`
+Copy and adjust virtual host setting ...
+- `cp docker/config/openmage.conf ~/workspace/docker/dev-environment/config/apache24/conf.d/`
 
-Start sample installation (should start apache and all other containers)
-
+#### Start docker containers
 - `dde-start`
 
-_(docker containers should be built or started)_
+<small>_(docker container should start)_</small>
+####Install composer inside docker container
 
-Install composer inside docker container
+Follow [Customizable bin commands in the PHP-CLI-Containers](https://github.com/sandstein/docker-dev-environment#customizable-bin-commands-in-the-php-cli-containers).
 
-- `dde-cli bash`
-- run `wget` to install composer to `~/bin`
+###Initial setup
+Here you can add all you CLI commands to set up your project.
 
-Initial setup (create DB, run custom scripts, import media files ...)
+- create database <small>(already done)</small>
+- import DB backups
+- symlink media files
+- run custom commands, e.g. `n98-magerun <command>`
+- ... 
+
+Adjust and run ...
 - `dde-cli docker/init-dev-environment.sh`
 
-_(DB shema should be created, and OpenMage should be installed to htdocs)_
+<small>_(DB shema should be created, and OpenMage should be installed to htdocs)_</small>
 
-If everything worked `http//:sample.localhost` should show up OpenMage installation page.
+###Check setup
 
-To automatically install OM you can run scripts from `init-dev-environment.sh`.
+If everything worked http://openmage.localhost should show up _OpenMage_ installation page.
+
+##ToDo
+- optionally add sample data
+
+##Thanks to
+- @wilfriedwolf for _docker-dev-environment_

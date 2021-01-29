@@ -3,7 +3,7 @@
 #
 # docker settings which can be modified if desired
 #
-DB_SCHEMA=openmage_sample
+DB_SCHEMA=openmage
 
 #
 # docker settings which should not be altered
