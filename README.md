@@ -33,7 +33,6 @@ Copy and adjust virtual host setting ...
 #### Start docker containers
 - `dde-start`
 
-<small>_(docker container should start)_</small>
 #### Install composer inside docker container
 
 Follow [Customizable bin commands in the PHP-CLI-Containers](https://github.com/sandstein/docker-dev-environment#customizable-bin-commands-in-the-php-cli-containers).
@@ -50,11 +49,11 @@ Here you can add all you CLI commands to set up your project.
 Adjust and run ...
 - `dde-cli docker/init-dev-environment.sh`
 
-<small>_(DB shema should be created, and OpenMage should be installed to htdocs)_</small>
+<small>_(DB shema should be created and OpenMage should be installed to htdocs)_</small>
 
 ### Check setup
 
-If everything worked http://openmage.localhost should show up _OpenMage_ installation page.
+If everything worked http://openmage.localhost should show up _OpenMage_ installation wizzard page.
 
 ## ToDo
 - optionally add sample data
