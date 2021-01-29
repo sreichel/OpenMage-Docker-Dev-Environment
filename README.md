@@ -37,6 +37,10 @@ Copy and adjust virtual host setting ...
 
 Follow [Customizable bin commands in the PHP-CLI-Containers](https://github.com/sandstein/docker-dev-environment#customizable-bin-commands-in-the-php-cli-containers).
 
+- `dde-cli bash`
+- `cd /home/phpcli/bin`
+- run composer install command
+
 ### Initial setup
 Here you can add all you CLI commands to set up your project.
 
