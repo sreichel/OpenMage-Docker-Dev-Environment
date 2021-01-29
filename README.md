@@ -1,7 +1,7 @@
-#OpenMage DDE-Starter-Project
+# OpenMage DDE-Starter-Project
 A flexible docker based sample setup for OpenMage LTS based on [sandstein/docker-dev-environment](https://github.com/sandstein/docker-dev-environment).
 
-##Installation
+## Installation
 
 To easily follow sample files, it is recommended to install _docker-dev-environment_ and all your projects to `~/workspace`.
 
@@ -18,7 +18,7 @@ Follow [Initialisation and commands](https://github.com/sandstein/docker-dev-env
 - `cd ~/workspace/docker/dev-environment`
 - `ln -s ../.. vhosts`
 
-###Install _OpenMage LTS_
+### Install _OpenMage LTS_
 - `cd ~/workspace`
 - `git clone https://github.com/sreichel/om-dde-starter-project.git magento1/openmage`
 - `cd ~/workspace/magento1/openmage`
@@ -34,11 +34,11 @@ Copy and adjust virtual host setting ...
 - `dde-start`
 
 <small>_(docker container should start)_</small>
-####Install composer inside docker container
+#### Install composer inside docker container
 
 Follow [Customizable bin commands in the PHP-CLI-Containers](https://github.com/sandstein/docker-dev-environment#customizable-bin-commands-in-the-php-cli-containers).
 
-###Initial setup
+### Initial setup
 Here you can add all you CLI commands to set up your project.
 
 - create database <small>(already done)</small>
@@ -52,12 +52,12 @@ Adjust and run ...
 
 <small>_(DB shema should be created, and OpenMage should be installed to htdocs)_</small>
 
-###Check setup
+### Check setup
 
 If everything worked http://openmage.localhost should show up _OpenMage_ installation page.
 
-##ToDo
+## ToDo
 - optionally add sample data
 
-##Thanks to
+## Thanks to
 - @wilfriedwolf for _docker-dev-environment_
