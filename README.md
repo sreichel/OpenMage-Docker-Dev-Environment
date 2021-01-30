@@ -20,7 +20,7 @@ Follow [Initialisation and commands](https://github.com/sandstein/docker-dev-env
 
 ### Install _OpenMage LTS_
 - `cd ~/workspace`
-- `git clone https://github.com/sreichel/OpenMage-Docker-Dev-Environment.git`
+- `git clone https://github.com/sreichel/OpenMage-Docker-Dev-Environment.git magento1/openmage`
 - `cd ~/workspace/magento1/openmage`
 
 #### Project configuration
