@@ -25,10 +25,10 @@ Follow [Initialisation and commands](https://github.com/sandstein/docker-dev-env
 
 #### Project configuration
 Copy and adjust environment setting ...
-- `cp docker/.env.sample .env`
+- `cp docker/config/.env.sample .env`
 
 Copy and adjust virtual host setting ...
-- `cp docker/config/openmage.conf ~/workspace/docker/dev-environment/config/apache24/conf.d/`
+- `cp docker/config/openmage.conf ~/workspace/docker/dev-environment/config/apache-24/conf.d/`
 
 #### Start docker containers
 - `dde-start`
